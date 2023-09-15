@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230913 13:19:29.643" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\EmmaAmnesten\Documents\Robot projects\Learning part 2 order robot\tasks.robot">
+<test id="s1-t1" name="Order robots from RobotSpareBin Industries Inc" line="12">
+<kw name="Open the robot order website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/#/robot-order</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230913 13:19:36.929" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230913 13:19:41.904" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230913 13:19:41.905" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230913 13:19:41.906" level="INFO">Opening url 'https://robotsparebinindustries.com/#/robot-order'</msg>
+<status status="PASS" starttime="20230913 13:19:36.833" endtime="20230913 13:19:46.083"/>
+</kw>
+<status status="PASS" starttime="20230913 13:19:36.832" endtime="20230913 13:19:46.084"/>
+</kw>
+<status status="PASS" starttime="20230913 13:19:36.830" endtime="20230913 13:19:46.086"/>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.
+Saves the order HTML receipt as a PDF file.
+Saves the screenshot of the ordered robot.
+Embeds the screenshot of the robot to the PDF receipt.
+Creates ZIP archive of the receipts and the images.</doc>
+<status status="PASS" starttime="20230913 13:19:29.696" endtime="20230913 13:19:46.092"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
